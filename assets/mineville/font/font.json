@@ -1,0 +1,37 @@
+{
+   "providers":[
+      {
+         "type":"bitmap",
+         "file":"mineville:font/start.png",
+         "ascent":8,
+         "height":9,
+         "chars":[
+            "a"
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/six.png",
+         "ascent":8,
+         "height":9,
+         "chars":[
+            "ꪁ"
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/end.png",
+         "ascent":8,
+         "height":9,
+         "chars":[
+            ";"
+         ]
+      },
+      {
+         "type": "space",
+         "advances":{
+            "":-6
+         }
+      }
+   ]
+}
