@@ -3,7 +3,7 @@ name: Resourcepack Zipper
 on:
   push:
     branches:
-      - master  # Adjust this branch name if needed
+      - main  # Adjust this branch name if needed
 
 jobs:
   build:
@@ -15,11 +15,11 @@ jobs:
       with:
         fetch-depth: 0 # A non-shallow repository clone is required
 
-    - name: Run PackSquash
-      uses: ComunidadAylas/PackSquash-action@v4
-      with:
-        packsquash_version: latest # Uses the latest PackSquash release supported by the action
-        shader_source_transformation_strategy: keep_as_is
+    # - name: Run PackSquash
+    #   uses: ComunidadAylas/PackSquash-action@v4
+    #   with:
+    #     packsquash_version: latest # Uses the latest PackSquash release supported by the action
+    #     shader_source_transformation_strategy: keep_as_is
 
     - name: Create ZIP file
       run: |
