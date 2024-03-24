@@ -1,6 +1,0 @@
-{
-    "providers": [
-        {"type": "bitmap","file": "minecraft:logo/logo.png","ascent": 26, "height": 60,"chars": ["⿌⿍"]},
-        {"type": "bitmap","file": "minecraft:logo/space.png","ascent": -32768,"height": -3,"chars": ["⿎"]}
-    ]
-}
