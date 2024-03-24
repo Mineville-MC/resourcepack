@@ -20,13 +20,16 @@ jobs:
     #   with:
     #     packsquash_version: latest # Uses the latest PackSquash release supported by the action
     #     shader_source_transformation_strategy: keep_as_is
+    - name: Retrieve current Date Time in Singapore TimeZone
+      shell: bash
+      run: echo "START_TIME=$(TZ=":Europe/Amsterdam" date -R|sed 's/.....$//')" >> $GITHUB_ENV
 
     - name: Update pack.mcmeta
       uses: jossef/action-set-json-field@v2.1
       with:
         file: pack.mcmeta
         field: pack.description
-        value: "Mineville | v${{ github.run_number }}, ${{ github.event.repository.updated_at}}"
+        value: "Mineville | v${{ github.run_number }}\n${{ env.START_TIME }}"
 
     - name: Create ZIP file
       run: |
