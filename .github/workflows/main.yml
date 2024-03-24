@@ -21,6 +21,13 @@ jobs:
     #     packsquash_version: latest # Uses the latest PackSquash release supported by the action
     #     shader_source_transformation_strategy: keep_as_is
 
+    - name: Update pack.mcmeta
+      uses: jossef/action-set-json-field@v2.1
+      with:
+        file: pack.mcmeta
+        field: description
+        value: "Mineville | v${{ github.run_number }}"
+
     - name: Create ZIP file
       run: |
         COMMIT_ID=$(git rev-parse --short HEAD)
@@ -40,8 +47,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RESOURCE_ZIPPER }}
       with:
-        tag_name: release-${{ github.sha }}
-        release_name: Release ${{ github.sha }}
+        tag_name: release-${{ github.run_number }}
+        release_name: v${{ github.run_number }}
         draft: false
         prerelease: false
 
