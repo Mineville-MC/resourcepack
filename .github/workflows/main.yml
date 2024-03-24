@@ -25,7 +25,7 @@ jobs:
       uses: jossef/action-set-json-field@v2.1
       with:
         file: pack.mcmeta
-        field: description
+        field: pack.description
         value: "Mineville | v${{ github.run_number }}"
 
     - name: Create ZIP file
