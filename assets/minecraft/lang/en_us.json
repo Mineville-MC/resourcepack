@@ -1,11 +1,11 @@
 {
-  "menu.game": "§a§lMineville",
-  "menu.returnToGame": "§a§lSpeel verder",
-  "menu.disconnect": "§e§lTot snel!",
+  "menu.game": "Mineville",
+  "menu.returnToGame": "Speel verder",
+  "menu.disconnect": "Tot snel!",
   "menu.shareToLan": "mc.mineville.nl",
   "menu.sendFeedback": "§f§7Give Feedback",
   "gui.advancements": "§f§7Achievements",
-  "menu.playerReporting": "Niet zo sociaal",
+  "menu.playerReporting": "§f§7Antisocial menu",
 
   "title.multiplayer.other": "Mineville"
 }
