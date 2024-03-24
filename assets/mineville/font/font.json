@@ -1,36 +1,124 @@
-{
+{ // https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0000
    "providers":[
       {
          "type":"bitmap",
          "file":"mineville:font/start.png",
-         "ascent":8,
-         "height":9,
+         "ascent":9,
+         "height":11,
          "chars":[
-            "a"
-         ]
-      },
-      {
-         "type":"bitmap",
-         "file":"mineville:font/six.png",
-         "ascent":8,
-         "height":9,
-         "chars":[
-            "ꪁ"
+            "" // 0x0001
          ]
       },
       {
          "type":"bitmap",
          "file":"mineville:font/end.png",
-         "ascent":8,
-         "height":9,
+         "ascent":9,
+         "height":11,
          "chars":[
-            ";"
+            "" // 0x0002
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/1.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x0003
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/2.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x0004
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/4.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x0005
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/8.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x0006
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/16.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x0007
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/32.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x0008
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/64.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x000B
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/128.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x000E
+         ]
+      },
+      {
+         "type":"bitmap",
+         "file":"mineville:font/256.png",
+         "ascent":9,
+         "height":11,
+         "chars":[
+            "" // 0x000F
          ]
       },
       {
          "type": "space",
          "advances":{
-            "":-6
+            "":-1, // 0x0010
+            "":-2, // 0x0011
+            "":-4, // 0x0012
+            "":-8, // 0x0013
+            "":-16, // 0x0014
+            "":-32, // 0x0015
+            "":-64, // 0x0016
+            "":-128, // 0x0017
+            "":-256, // 0x0018
+
+            "":1, // 0x0019
+            "":2, // 0x001A
+            "":4, // 0x001B
+            "":8, // 0x001C
+            "":16, // 0x001D
+            "":32, // 0x001E
+            "":64 // 0x001F
          }
       }
    ]
