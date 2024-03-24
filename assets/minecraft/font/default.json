@@ -1,0 +1,6 @@
+{
+    "providers": [
+        {"type": "bitmap","file": "minecraft:custom/logo.png","ascent": 26, "height": 60,"chars": ["⿌⿍"]},
+        {"type": "bitmap","file": "minecraft:custom/icons/space.png","ascent": -32768,"height": -3,"chars": ["⿎"]}
+    ]
+}
