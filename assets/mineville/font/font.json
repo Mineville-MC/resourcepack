@@ -3,8 +3,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/start.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0001
          ]
@@ -12,8 +12,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/end.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0002
          ]
@@ -21,8 +21,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/1.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0003
          ]
@@ -30,8 +30,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/2.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0004
          ]
@@ -39,8 +39,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/4.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0005
          ]
@@ -48,8 +48,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/8.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0006
          ]
@@ -57,8 +57,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/16.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0007
          ]
@@ -66,8 +66,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/32.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x0008
          ]
@@ -75,8 +75,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/64.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x000B
          ]
@@ -84,8 +84,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/128.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x000E
          ]
@@ -93,8 +93,8 @@
       {
          "type":"bitmap",
          "file":"mineville:font/256.png",
-         "ascent":9,
-         "height":11,
+         "ascent":5,
+         "height":14,
          "chars":[
             "" // 0x000F
          ]
