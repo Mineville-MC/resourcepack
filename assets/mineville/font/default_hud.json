@@ -23,7 +23,9 @@
         "≡±≥≤⌠⌡÷≈°∙\u0000√ⁿ²■\u0000"
       ]
     },
-         {"type": "bitmap","file": "mineville:font/clock.png", "ascent":3.9, "height": 11, "chars": ["\uE007"]},
+         {"type": "bitmap","file": "mineville:font/clock.png", "ascent":3, "height": 10, "chars": ["\uE007"]},
+         {"type": "bitmap","file": "mineville:font/coin.png", "ascent":3, "height": 10, "chars": ["\uE008"]},
+         {"type": "bitmap","file": "mineville:font/location.png", "ascent":3, "height": 10, "chars": ["\uE009"]},
     {
       "type": "space",
       "advances": {
