@@ -20,6 +20,7 @@ jobs:
       with:
         packsquash_version: latest # Uses the latest PackSquash release supported by the action
         options: |
+          pack_directory = '.'
           shader_source_transformation_strategy = 'keep_as_is'
         
     - name: Retrieve the current time of Amsterdam
