@@ -28,12 +28,16 @@ jobs:
       shell: bash
       run: echo "START_TIME=$(TZ=":Europe/Amsterdam" date -R|sed 's/.....$//')" >> $GITHUB_ENV
 
+    - name: Generate version number
+      id: version
+      run: echo "::set-output name=VERSION::$(echo ${{ github.run_number }} | awk '{printf "%d.%d.%d", $1/1000%10, $1/100%10, $1%100}')"
+
     - name: Update pack.mcmeta
       uses: jossef/action-set-json-field@v2.1
       with:
         file: pack.mcmeta
         field: pack.description
-        value: "Mineville | v${{ github.run_number }}\n${{ env.START_TIME }}"
+        value: "Mineville | v${{ steps.version.outputs.VERSION }}\n${{ env.START_TIME }}"
 
     - name: Create ZIP file
       run: |
@@ -54,8 +58,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RESOURCE_ZIPPER }}
       with:
-        tag_name: release-${{ github.run_number }}
-        release_name: v${{ github.run_number }}
+        tag_name: release-${{ steps.version.outputs.VERSION }}
+        release_name: v${{ steps.version.outputs.VERSION }}
         draft: false
         prerelease: false
 
