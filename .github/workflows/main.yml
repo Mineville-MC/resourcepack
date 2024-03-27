@@ -30,7 +30,13 @@ jobs:
 
     - name: Generate version number
       id: version
-      run: echo "::set-output name=VERSION::$(echo ${{ github.run_number }} | awk '{printf "%d.%d.%d", $1/1000%10, $1/100%10, $1%100}')"
+      run: |
+        # Calculate version number from GitHub run number
+        PATCH=$(echo ${{ github.run_number }} | awk '{printf "%d", $1%10}')
+        MINOR=$(echo ${{ github.run_number }} | awk '{printf "%d", ($1/10)%10}')
+        MAJOR=1
+        echo "::set-output name=VERSION::${MAJOR}.${MINOR}.${PATCH}"
+
 
     - name: Update pack.mcmeta
       uses: jossef/action-set-json-field@v2.1
