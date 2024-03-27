@@ -15,12 +15,13 @@ jobs:
       with:
         fetch-depth: 0 # A non-shallow repository clone is required
 
-    # - name: Run PackSquash
-    #   uses: ComunidadAylas/PackSquash-action@v4
-    #   with:
-    #     packsquash_version: latest # Uses the latest PackSquash release supported by the action
-    #     shader_source_transformation_strategy: keep_as_is
-    - name: Retrieve current Date Time in Singapore TimeZone
+    - name: Run PackSquash
+      uses: ComunidadAylas/PackSquash-action@v4
+      with:
+        packsquash_version: latest # Uses the latest PackSquash release supported by the action
+        shader_source_transformation_strategy: keep_as_is
+        
+    - name: Retrieve the current time of Amsterdam
       shell: bash
       run: echo "START_TIME=$(TZ=":Europe/Amsterdam" date -R|sed 's/.....$//')" >> $GITHUB_ENV
 
