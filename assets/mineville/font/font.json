@@ -3,8 +3,8 @@
       {
          "type": "space",
          "file": "mineville:font/logo.png",
-         "ascent": 9,
-         "height": 11,
+         "ascent": 127,
+         "height": 127,
          "chars": [
             "" // 0x0012
          ]
