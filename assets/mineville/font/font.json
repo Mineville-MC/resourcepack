@@ -1,6 +1,15 @@
 { // https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0000
    "providers":[
       {
+         "type": "space",
+         "file": "mineville:font/logo.png",
+         "ascent": 9,
+         "height": 11,
+         "chars": [
+            "" // 0x0012
+         ]
+      },
+      {
          "type":"bitmap",
          "file":"mineville:font/start.png",
          "ascent":9,
