@@ -1,0 +1,22 @@
+{
+    "providers":[
+        {
+            "file":"mineville:font/dev.png",
+            "chars":[
+               "②"
+            ],
+            "height":7,
+            "ascent":7,
+            "type":"bitmap"
+         },
+         {
+            "file":"mineville:font/admin.png",
+            "chars":[
+               "③"
+            ],
+            "height":7,
+            "ascent":7,
+            "type":"bitmap"
+         }
+    ]
+}
