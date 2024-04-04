@@ -1,7 +1,7 @@
 {
     "providers":[
         {
-            "file":"mineville:font/dev.png",
+            "file":"mineville:font/ranks/dev.png",
             "chars":[
                "②"
             ],
@@ -10,7 +10,7 @@
             "type":"bitmap"
          },
          {
-            "file":"mineville:font/admin.png",
+            "file":"mineville:font/ranks/admin.png",
             "chars":[
                "③"
             ],
