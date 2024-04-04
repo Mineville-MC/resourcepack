@@ -17,6 +17,15 @@
             "height":7,
             "ascent":7,
             "type":"bitmap"
+         },
+         {
+            "file":"font/ranks/bouw.png",
+            "chars":[
+               "⑧"
+            ],
+            "height":7,
+            "ascent":7,
+            "type":"bitmap"
          }
     ]
 }
